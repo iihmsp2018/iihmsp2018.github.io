@@ -30,8 +30,8 @@
  border-bottom: 1px solid #999999;
 }
 #main{
- float: left;
- width: 635px;
+ float: none;
+ width: auto;
  display: block;
  min-height: 414px;
  margin: 0px 0px 2px;
@@ -45,10 +45,10 @@
  border-left: 1px solid #999999;
 }
 #menubar{
- float: left;
- width: 160px;
+ clear: both;
+ width: auto;
  min-height: 15px;
- display: list-item;
+ display: block;
  margin: 0px;
  padding: 4px 0px 3px;
  background: #97a7c7 left top;
@@ -57,7 +57,7 @@
  font-weight: bold;
  color: #ffffff;
  border-top: none;
- border-bottom: 30px solid #97a7c7;
+ border-bottom: 1px solid #999999;
 }
 #menubar .button{
  margin: 0px;
