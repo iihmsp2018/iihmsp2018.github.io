@@ -5,10 +5,10 @@
          <a href="index.html" class="mainmenuitemlink"><span class="mainmenuitemmark">TOP</span></a>       
     </li>
     <li class="mainmenulistitem">
-         <a href="committee.html" class="mainmenuitemlink"><span class="mainmenuitemmark">Committee</span></a>
+         <a href="cfp.html" class="mainmenuitemlink"><span class="mainmenuitemmark">CFP</span></a>
     </li>
     <li class="mainmenulistitem">
-         <a href="cfp.html" class="mainmenuitemlink"><span class="mainmenuitemmark">CFP</span></a>
+         <a href="authkit.html" class="mainmenuitemlink"><span class="mainmenuitemmark">Author's guide</span></a>
     </li>
     <li class="mainmenulistitem">
          <a href="program.html" class="mainmenuitemlink"><span class="mainmenuitemmark">Program</span></a>
@@ -21,6 +21,9 @@
     </li>
     <li class="mainmenulistitem">
          <a href="dates.html" class="mainmenuitemlink"><span class="mainmenuitemmark">Important dates</span></a>
+    </li>
+    <li class="mainmenulistitem">
+         <a href="committee.html" class="mainmenuitemlink"><span class="mainmenuitemmark">Committee</span></a>
     </li>
    </ul>
 </div></div>

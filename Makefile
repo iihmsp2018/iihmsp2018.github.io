@@ -1,20 +1,27 @@
+#
 GEN=tclsh combhtml.tcl
-COMMON_FLAG=-file HEADER header.ht -file MENU menu.ht
-COMMON_SOURCE=header.ht menu.ht template.ht
+COMMON_FLAG=-file HEADER header.htm -file MENU menu.htm
+COMMON_SOURCE=header.htm menu.htm template.htm
 
-all: index.html committee.html cfp.html program.html registration.html dates.html venue.html
+TARGET=index.html committee.html cfp.html program.html registration.html dates.html venue.html authkit.html
 
-index.html: $(COMMON_SOURCE) index_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE Main -file MAIN index_main.ht template.ht > index.html
-committee.html: $(COMMON_SOURCE) committee_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE "Organizing Committee" -file MAIN committee_main.ht template.ht > committee.html
-cfp.html: $(COMMON_SOURCE) cfp_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE "Call for Paper" -file MAIN cfp_main.ht template.ht > cfp.html
-program.html: $(COMMON_SOURCE) program_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE "Program" -file MAIN program_main.ht template.ht > program.html
-registration.html: $(COMMON_SOURCE) registration_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE "Registration" -file MAIN registration_main.ht template.ht > registration.html
-dates.html: $(COMMON_SOURCE) dates_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE "Important Dates" -file MAIN dates_main.ht template.ht > dates.html
-venue.html: $(COMMON_SOURCE) venue_main.ht
-	$(GEN) $(COMMON_FLAG) -set TITLE "Conference Venue and Local Information" -file MAIN venue_main.ht template.ht > venue.html
+all: $(TARGET)
+clean:
+	rm -f $(TARGET) 
+
+index.html: $(COMMON_SOURCE) index_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE Main -file MAIN index_main.htm template.htm > index.html
+committee.html: $(COMMON_SOURCE) committee_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Organizing Committee" -file MAIN committee_main.htm template.htm > committee.html
+cfp.html: $(COMMON_SOURCE) cfp_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Call for Paper" -file MAIN cfp_main.htm template.htm > cfp.html
+program.html: $(COMMON_SOURCE) program_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Program" -file MAIN program_main.htm template.htm > program.html
+registration.html: $(COMMON_SOURCE) registration_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Registration" -file MAIN registration_main.htm template.htm > registration.html
+dates.html: $(COMMON_SOURCE) dates_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Important Dates" -file MAIN dates_main.htm template.htm > dates.html
+venue.html: $(COMMON_SOURCE) venue_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Conference Venue and Local Information" -file MAIN venue_main.htm template.htm > venue.html
+authkit.html: $(COMMON_SOURCE) authkit_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Author's Guideline" -file MAIN authkit_main.htm template.htm > authkit.html
