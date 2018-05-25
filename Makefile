@@ -3,7 +3,7 @@ GEN=tclsh combhtml.tcl
 COMMON_FLAG=-file HEADER header.htm -file MENU menu.htm
 COMMON_SOURCE=header.htm menu.htm template.htm
 
-TARGET=index.html committee.html cfp.html program.html registration.html dates.html venue.html authkit.html
+TARGET=index.html committee.html cfp.html program.html registration.html dates.html venue.html authkit.html contact.html
 
 all: $(TARGET)
 clean:
@@ -25,3 +25,5 @@ venue.html: $(COMMON_SOURCE) venue_main.htm
 	$(GEN) $(COMMON_FLAG) -set TITLE "Conference Venue and Local Information" -file MAIN venue_main.htm template.htm > venue.html
 authkit.html: $(COMMON_SOURCE) authkit_main.htm
 	$(GEN) $(COMMON_FLAG) -set TITLE "Author's Guideline" -file MAIN authkit_main.htm template.htm > authkit.html
+contact.html: $(COMMON_SOURCE) contact_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Contact Us" -file MAIN contact_main.htm template.htm > contact.html
