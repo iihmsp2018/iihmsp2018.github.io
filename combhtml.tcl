@@ -24,12 +24,12 @@ set templatefile [lindex $argv 0]
 foreach var [array names content] {
   if {$var eq "none"} continue
   set type [lindex $content($var) 0]
-  set cont [lreplace $content($var) 0 0]
+  set cont [lindex $content($var) 1]
   if {$type eq "filename"} {
     set f [open $cont r]
     set cont [read $f]
     close $f
-  }
+  } 
   # escape
   set cont [regsub -all {\\} $cont {\\\\}]
   set content($var) [regsub -all {&} $cont {\\&}]
