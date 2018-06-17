@@ -552,3 +552,6 @@ table.table9 td{
 table.table9 th{
  background: #b8bce3 left top;
 }
+ol.invitedsession {
+    list-style-type: decimal-leading-zero;
+}
