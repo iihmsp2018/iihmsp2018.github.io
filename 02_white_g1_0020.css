@@ -319,7 +319,7 @@ h2{
 h3{
  margin: 10px;
  font-style: bold;
- font-size: 15pt;
+ font-size: 16pt;
  text-decoration: none;
  text-transform: none;
  line-height: 120%;
@@ -327,15 +327,16 @@ h3{
 h4{
  margin: 0px;
  font-weight: bold;
- font-size: 10pt;
+ font-size: 14pt;
  text-decoration: none;
  text-transform: none;
  line-height: 120%;
+ color: indigo;
 }
 h5{
  margin: 0px;
  font-style: italic;
- font-size: 8.3pt;
+ font-size: 12pt;
  text-decoration: none;
  text-transform: none;
  line-height: 117%;
