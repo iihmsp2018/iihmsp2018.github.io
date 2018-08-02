@@ -5,7 +5,7 @@ COMMON_SOURCE=header.htm menu.htm template.htm
 
 TARGET=index.html committee.html cfp.html program.html registration.html \
        dates.html venue.html authkit.html contact.html invitedsession.html \
-	   keynote.html
+	   keynote.html visa.html
 
 all: $(TARGET)
 clean:
@@ -33,3 +33,5 @@ invitedsession.html: $(COMMON_SOURCE) invitedsession_main.htm
 	$(GEN) $(COMMON_FLAG) -set TITLE "Invited Sessions" -file MAIN invitedsession_main.htm template.htm > invitedsession.html
 keynote.html: $(COMMON_SOURCE) keynote_main.htm
 	$(GEN) $(COMMON_FLAG) -set TITLE "Keynote Speech" -file MAIN keynote_main.htm template.htm > keynote.html
+visa.html: $(COMMON_SOURCE) visa_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "Visa Information" -file MAIN visa_main.htm template.htm > visa.html
