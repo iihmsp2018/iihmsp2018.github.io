@@ -150,6 +150,39 @@
  border-top: none;
  border-bottom: 1px solid #999999;
 }
+#presen_title{
+ clear: right;
+ width: auto;
+ margin: 0px;
+ text-align: left;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 14pt;
+ border-top: none;
+ border-bottom: none;
+}
+#authors{
+ clear: right;
+ width: auto;
+ margin: 0px;
+ text-align: left;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 14pt;
+ border-top: none;
+ border-bottom: 1px solid #999999;
+}
+#session{
+ clear: right;
+ width: auto;
+ margin: 10px 0px;
+ text-align: left;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 15pt;
+ border-top: none;
+ border-bottom: 1px solid #999999;
+}
 .address1{
  padding: 0px 0px 0px 20px;
  background: url("g1_0020_mailbtn01.png") no-repeat left top;
@@ -325,7 +358,7 @@ h3{
  line-height: 120%;
 }
 h4{
- margin: 0px;
+ margin: 10px 0px;
  font-weight: bold;
  font-size: 14pt;
  text-decoration: none;
