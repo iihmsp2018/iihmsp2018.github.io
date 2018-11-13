@@ -5,7 +5,7 @@ COMMON_SOURCE=header.htm menu.htm template.htm
 
 TARGET=index.html committee.html cfp.html program.html registration.html \
        dates.html venue.html authkit.html contact.html invitedsession.html \
-	   keynote.html visa.html accomodation.html
+	   keynote.html visa.html accomodation.html 2019.html
 
 all: $(TARGET)
 clean:
@@ -37,3 +37,5 @@ visa.html: $(COMMON_SOURCE) visa_main.htm
 	$(GEN) $(COMMON_FLAG) -set TITLE "Visa Information" -file MAIN visa_main.htm template.htm > visa.html
 accomodation.html: $(COMMON_SOURCE) accomodation_main.htm
 	$(GEN) $(COMMON_FLAG) -set TITLE "Accomodation" -file MAIN accomodation_main.htm template.htm > accomodation.html
+2019.html: $(COMMON_SOURCE) 2019_main.htm
+	$(GEN) $(COMMON_FLAG) -set TITLE "IIH-MSP 2019" -file MAIN 2019_main.htm template.htm > 2019.html
